@@ -1,0 +1,75 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: rgb(0, 22, 76);
+    background: linear-gradient(
+      146deg,
+      rgba(0, 22, 76, 1) 1%,
+      rgba(3, 197, 239, 1) 30%,
+      rgba(0, 89, 203, 1) 68%,
+      rgba(0, 22, 76, 1) 100%
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+  }
+
+  h2 {
+    color: white;
+  }
+
+  .card {
+    box-shadow: 10px 10px 10px rgba(0, 22, 76, 0.5),
+      -10px -10px 10px rgba(0, 22, 76, 0.5);
+  }
+
+  .button-section {
+    display: flex;
+    /* flex-direction: row; */
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+  }
+  button {
+    width: 60px;
+    height: 30px;
+    margin-left: 10px;
+    border: 1px solid rgb(252, 188, 13);
+    background-color: white;
+  }
+  button:hover {
+    background-color: rgb(214, 187, 122);
+  }
+  .review i {
+    color: rgb(252, 187, 90);
+  }
+  #nameCustomer {
+    font-size: 16px;
+    font-weight: 700;
+  }
+  #commentCustomer {
+    font-size: 15px;
+  }
+  #imgCustomer {
+    width: 100px;
+    border: 1px solid black;
+  }
+
+  @media (max-width: 785px) {
+    button {
+      width: 40px;
+      height: 30px;
+      margin-left: 10px;
+    }
+    #imgCustomer {
+      width: 90px;
+    }
+    .leftArrowImg {
+      width: 20px;
+    }
+    .rightArrowImg {
+      width: 20px;
+    }
+  }
